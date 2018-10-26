@@ -1,22 +1,25 @@
 <mdb-navbar SideClass="navbar navbar-expand-md navbar-dark indigo fixed-top">
     <mdb-navbar-brand>
-        <a class="navbar-brand animated lightSpeedIn title" routerLink="/">Serene Mammoth<span class="sr-only">(current)</span></a>
+        <a class="navbar-brand animated lightSpeedIn title" routerLink="/">
+            <mdb-icon icon="amazon" size="lg"></mdb-icon><span class="sr-only">(current)</span>
+        </a>
     </mdb-navbar-brand>
     <links>
         <div class="navbar-nav">
             <a class="nav-item nav-link waves-dark" routerLink="/productCard" mdbWavesEffect>Store</a>
-            <a class="nav-item nav-link waves-dark" routerLink="/addShow" mdbWavesEffect>IDK</a>
-            <a class="nav-item dropdown btn-group" dropdown>
-                <a dropdownToggle type="button" class="nav-item nav-link dropdown-toggle waves-dark profile"
-                    mdbWavesEffect>
-                    Profile<span class="caret"></span></a>
-                <div *dropdownMenu class="dropdown-menu dropdown dropdown-primary" role="menu">
-                    <a class="dropdown-item waves-light" routerLink="/login" mdbWavesEffect>Login</a>
-                    <a class="dropdown-item waves-light" routerLink="/shoppingCart" mdbWavesEffect>Shopping Cart</a>
-                    <div class="divider dropdown-divider"></div>
-                    <a class="dropdown-item waves-light" routerLink="/registerUser" mdbWavesEffect>Register</a>
-                </div>
-            </a>
+            <div class="profile justify-content-end">
+                <a class="nav-item dropdown btn-group" dropdown>
+                    <a dropdownToggle type="button" class="nav-item nav-link dropdown-toggle waves-dark"
+                        mdbWavesEffect>
+                        Profile<span class="caret"></span></a>
+                    <div *dropdownMenu class="dropdown-menu dropdown dropdown-primary" role="menu">
+                        <a class="dropdown-item waves-light" routerLink="/login" mdbWavesEffect>Login</a>
+                        <a class="dropdown-item waves-light" routerLink="/shoppingCart" mdbWavesEffect>Shopping Cart</a>
+                        <div class="divider dropdown-divider"></div>
+                        <a class="dropdown-item waves-light" routerLink="/registerUser" mdbWavesEffect>Register</a>
+                    </div>
+                </a>
+            </div>
         </div>
     </links>
 </mdb-navbar>
