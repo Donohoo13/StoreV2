@@ -62,5 +62,5 @@ referrer: "no-referrer", // no-referrer, *client
 body: this.convertShow() // body data type must match "Content-Type" header
 })
 .then(response => response.json());
-} 
+}}
 // parses response to JSON
